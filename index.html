@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CaspianTeb — Medical Textile Solutions</title>
+  <meta name="description" content="CaspianTeb | تولیدکننده منسوجات پزشکی، پک‌های جراحی و البسه بیمارستانی" />
+  <style>
+    :root{
+      --accent:#0077b6;
+      --accent-2:#00b4d8;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --radius:12px;
+      --max-width:1100px;
+      --gap:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#f3f8fb 0%,var(--bg) 100%);
+      color:#0f172a;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      direction:rtl;
+    }
+    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+    header{
+      background:transparent;
+      padding:18px 0;
+      position:sticky;top:0;z-index:40;
+      backdrop-filter: blur(6px);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+    }
+    nav ul{display:flex;gap:14px;margin:0;padding:0;list-style:none}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px}
+    nav a:hover{background:rgba(0,0,0,0.04);color:var(--accent)}
+    .cta{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none}
+    .hero{
+      margin-top:28px;
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;
+    }
+    .hero-card{
+      background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    .hero h1{margin:0 0 12px;font-size:28px;color:#04263b}
+    .hero p{margin:0;color:var(--muted)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);margin-top:22px}
+    .feature{background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    .feature h3{margin:0 0 8px;font-size:16px;color:#073b4c}
+    .catalog{
+      margin-top:18px;display:flex;gap:12px;flex-direction:column;
+    }
+    .catalog a{display:inline-block;padding:12px 16px;background:var(--accent-2);color:white;border-radius:10px;text-decoration:none;width:max-content}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    form{display:grid;gap:12px;margin-top:12px}
+    input,textarea,select{
+      padding:12px;border-radius:10px;border:1px solid #e6eef6;background:#fff;outline:none;font-size:14px;
+    }
+    button{padding:12px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:600}
+    footer{margin-top:36px;padding:28px 0;color:var(--muted);text-align:center}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; padding-bottom:8px}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      nav ul{display:none}
+      .features{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">CT</div>
+        <div>
+          <div style="font-weight:700">CaspianTeb</div>
+          <div style="font-size:12px;color:var(--muted)">Medical Textile Solutions</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">خانه</a></li>
+          <li><a href="#services">خدمات</a></li>
+          <li><a href="#catalog">کاتالوگ</a></li>
+          <li><a href="#contact">تماس</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#catalog">دانلود کاتالوگ</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <h1>منسوجات پزشکی با کیفیت بالا برای بیمارستان‌ها و کلینیک‌ها</h1>
+        <p>تولید پک‌های جراحی، البسه بیمارستانی و محصولات سفارشی با استانداردهای بین‌المللی. تمرکز ما روی کیفیت، ایمنی و تحویل به‌موقع است.</p>
+
+        <div class="features" aria-hidden="false">
+          <div class="feature">
+            <h3>کیفیت تضمینی</h3>
+            <p style="color:var(--muted);margin:6px 0 0">کنترل کیفیت دقیق در هر مرحله تولید</p>
+          </div>
+          <div class="feature">
+            <h3>تحویل سریع</h3>
+            <p style="color:var(--muted);margin:6px 0 0">لجستیک قابل اعتماد برای ارسال به سراسر کشور</p>
+          </div>
+          <div class="feature">
+            <h3>محصولات سفارشی</h3>
+            <p style="color:var(--muted);margin:6px 0 0">طراحی و تولید بر اساس نیازهای شما</p>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <a href="catalog.pdf" download>دانلود کاتالوگ PDF</a>
+          <div style="margin-top:8px;color:var(--muted);font-size:14px">یا برای دریافت نمونه و قیمت تماس بگیرید</div>
+        </div>
+      </div>
+
+      <aside style="padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#f8fdff);height:100%">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="font-weight:700;font-size:18px;color:#073b4c">درخواست نمونه</div>
+          <p style="margin:0;color:var(--muted)">فرم کوتاه زیر را پر کنید تا همکاران ما با شما تماس بگیرند.</p>
+          <form id="leadForm" onsubmit="event.preventDefault(); handleSubmit();">
+            <input type="text" id="name" placeholder="نام و نام خانوادگی" required />
+            <input type="tel" id="phone" placeholder="شماره تماس" required />
+            <select id="product">
+              <option value="">نوع محصول مورد نظر</option>
+              <option>پک جراحی</option>
+              <option>لباس بیمارستانی</option>
+              <option>ملحفه و روکش</option>
+            </select>
+            <button type="submit">ارسال درخواست</button>
+          </form>
+          <div id="msg" style="color:green;display:none">درخواست شما ثبت شد. ممنون!</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services" style="margin-top:28px">
+      <h2 style="margin:0 0 12px">خدمات ما</h2>
+      <div class="gallery">
+        <div class="card">
+          <h3 style="margin:0 0 8px">پک‌های جراحی</h3>
+          <p style="margin:0;color:var(--muted)">پک‌های استریل با بسته‌بندی استاندارد و قابل سفارشی‌سازی</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">لباس بیمارستانی</h3>
+          <p style="margin:0;color:var(--muted)">پارچه‌های ضد حساسیت و قابل شستشو صنعتی</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">محصولات یک‌بار مصرف</h3>
+          <p style="margin:0;color:var(--muted)">محصولات اقتصادی و ایمن برای مصرف روزمره</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" style="margin-top:28px">
+      <h2 style="margin:0 0 12px">نمونه‌ها و کاتالوگ</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div class="card" style="flex:1;min-width:220px">
+          <h4 style="margin:0 0 8px">کاتالوگ کامل</h4>
+          <p style="margin:0 0 12px;color:var(--muted)">دانلود کاتالوگ شامل مشخصات فنی و نمونه‌ها</p>
+          <a class="cta" href="catalog.pdf" download>دانلود PDF</a>
+        </div>
+        <div class="card" style="flex:2;min-width:260px">
+          <h4 style="margin:0 0 8px">نمونه تصاویر</h4>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <div style="background:#eef6fb;border-radius:8px;padding:12px;min-width:120px">تصویر ۱</div>
+            <div style="background:#eef6fb;border-radius:8px;padding:12px;min-width:120px">تصویر ۲</div>
+            <div style="background:#eef6fb;border-radius:8px;padding:12px;min-width:120px">تصویر ۳</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <h2 style="margin:0 0 12px">تماس با ما</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:18px">
+        <div class="card">
+          <h4 style="margin:0 0 8px">اطلاعات تماس</h4>
+          <p style="margin:0;color:var(--muted)">آدرس: شیراز، ایران</p>
+          <p style="margin:0;color:var(--muted)">تلفن: +98 71 1234 5678</p>
+          <p style="margin:0;color:var(--muted)">ایمیل: info@caspianteb.example</p>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 8px">پیام سریع</h4>
+          <form onsubmit="event.preventDefault(); handleContact();">
+            <input id="cname" placeholder="نام" required />
+            <input id="cemail" type="email" placeholder="ایمیل" required />
+            <textarea id="cmsg" rows="4" placeholder="پیام شما" required></textarea>
+            <button type="submit">ارسال پیام</button>
+          </form>
+          <div id="cmsgok" style="color:green;display:none;margin-top:8px">پیام شما ارسال شد.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:var(--max-width);margin:0 auto;padding:18px 20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div style="font-weight:700">CaspianTeb</div>
+          <div style="color:var(--muted)">© 2025 CaspianTeb. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function handleSubmit(){
+      document.getElementById('msg').style.display='block';
+      setTimeout(()=>document.getElementById('msg').style.display='none',3000);
+      document.getElementById('leadForm').reset();
+    }
+    function handleContact(){
+      document.getElementById('cmsgok').style.display='block';
+      setTimeout(()=>document.getElementById('cmsgok').style.display='none',3000);
+      document.getElementById('cname').value='';
+      document.getElementById('cemail').value='';
+      document.getElementById('cmsg').value='';
+    }
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
