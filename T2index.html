@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Caspian Teb Nedaye Salamat Pars — Medical Textiles</title>
+  <meta name="description" content="Caspian Teb Nedaye Salamat Pars — Leading in medical textiles, surgical packs, gowns and drapes. EN 13795, ISO 13485 compliant." />
+  <meta name="keywords" content="CaspianTeb, medical textiles, surgical packs, hospital gowns, Iran, Shiraz" />
+  <style>
+    :root{
+      --accent:#0b6fa4;
+      --accent-2:#00a8d8;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --radius:12px;
+      --max-width:1100px;
+      --gap:18px;
+      --font-en: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font-en);
+      background:linear-gradient(180deg,#f3f8fb 0%,var(--bg) 100%);
+      color:#0f172a;
+      line-height:1.6;
+      direction:ltr;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:var(--max-width);margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,0.85);backdrop-filter:blur(6px);z-index:50;border-bottom:1px solid #eef3f7}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    nav ul{display:flex;gap:12px;margin:0;padding:0;list-style:none}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px}
+    nav a.active{color:var(--accent);font-weight:700}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
+    main{padding:20px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center;margin-top:18px}
+    .slider{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+    .slide{padding:36px;background:linear-gradient(180deg,#fff,#f8fdff);min-height:220px;display:flex;flex-direction:column;justify-content:center}
+    .slide h2{margin:0 0 8px}
+    .slide p{margin:0;color:var(--muted)}
+    .slider-controls{position:absolute;left:12px;top:12px;display:flex;gap:8px}
+    .dot{width:10px;height:10px;border-radius:50%;background:rgba(0,0,0,0.12);cursor:pointer}
+    .dot.active{background:var(--accent)}
+    .aside-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    input,textarea,select,button{font-family:inherit}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef6;background:#fff}
+    button{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:0;cursor:pointer}
+    footer{margin-top:28px;padding:20px 0;color:var(--muted);text-align:center}
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      nav ul{display:none}
+      .gallery{grid-template-columns:1fr}
+      body{padding-bottom:60px}
+    }
+    .download-btn{display:inline-block;padding:10px 14px;background:var(--accent-2);color:white;border-radius:8px;text-decoration:none}
+    .small{font-size:13px;color:var(--muted)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+
+  <!-- JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Caspian Teb Nedaye Salamat Pars",
+    "url":"https://yourdomain.example",
+    "logo":"https://yourdomain.example/logo.png",
+    "contactPoint":[{"@type":"ContactPoint","telephone":"+98 912 917 9078","contactType":"customer service","areaServed":"IR"}],
+    "sameAs":["https://instagram.com/caspiantebmed","https://t.me/CaspianTebpars"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Main navigation">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">CT</div>
+        <div>
+          <div style="font-weight:700">Caspian Teb</div>
+          <div style="font-size:12px;color:var(--muted)">Medical Textile Solutions</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="#/" data-route="/">Home</a></li>
+          <li><a href="#/about" data-route="/about">About Us</a></li>
+          <li><a href="#/products" data-route="/products">Products</a></li>
+          <li><a href="#/services" data-route="/services">Services</a></li>
+          <li><a href="#/news" data-route="/news">News & Articles</a></li>
+          <li><a href="#/contact" data-route="/contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="cta" href="catalog.pdf" download>Download Catalog</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="container" role="main">
+    <!-- React renders here -->
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div style="font-weight:700">Caspian Teb</div>
+      <div style="color:var(--muted)">© 2025 Caspian Teb Nedaye Salamat Pars. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- React + ReactDOM (CDN) -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <script>
+  (function(){
+    const e = React.createElement;
+    const { useState, useEffect } = React;
+
+    const CONTENT = {
+      home: {
+        slogan: "Caspian Teb Nedaye Salamat Pars – Leading in Medical Textiles and Hospital Garments",
+        intro: "With over a decade of experience in producing surgical packs, gowns, and drapes, we deliver products compliant with international standards EN 13795 and ISO 13485."
+      },
+      about: {
+        title: "About Us",
+        body: `Caspian Teb Nedaye Salamat Pars is a specialized manufacturer of disposable sterile personal protective equipment (PPE) serving hospitals, clinics, and industrial clients. We produce sterile surgical gowns, disposable surgical packs, shoe covers, caps, and other single‑use protective items designed to reduce cross‑contamination and support safe clinical workflows. Our production lines combine modern non‑woven materials with validated sterilization processes to deliver consistent, reliable products for critical environments.
+
+What We Do
+
+We design and manufacture pre‑assembled sterile packs and single‑use protective garments that simplify operating room logistics and improve procedural efficiency. Pre‑packaged surgical kits and standardized disposable items reduce preparation time and lower the risk of surgical site infections by ensuring sterility and traceability at the point of use. Our capabilities include custom pack configuration, scalable production runs, and quality documentation to meet institutional procurement requirements.
+
+Mission
+
+To protect healthcare workers and patients by supplying high‑quality, sterile disposable PPE that meets clinical needs and regulatory expectations.
+
+Vision
+
+To be a trusted regional partner for healthcare providers by combining manufacturing excellence, responsive service, and continuous product innovation.
+
+Core Values
+
+- Quality first: rigorous incoming material checks and in‑process controls.
+- Safety and compliance: validated sterilization and traceable batch records.
+- Customer focus: flexible order sizes and technical support.
+- Sustainability: optimizing material use and responsible waste practices.
+
+Why Choose Caspian Teb
+
+- Sterile, ready‑to‑use products that reduce contamination risk and streamline procedures.
+- Customizable surgical packs tailored to clinical protocols and specialty needs.
+- Robust quality control across raw materials, production, and sterilization steps.
+- Reliable supply and technical support for institutional customers.
+
+Quick Comparison
+
+Attribute | Caspian Teb Nedaye Salamat Pars | Typical regional competitor
+---|---:|---
+Product focus | Disposable sterile PPE and custom surgical packs | Surgical packs and disposable garments
+Quality emphasis | Validated sterilization and QC documentation | Standard QC and competitive pricing
+Customization | High; tailored pack configurations | Varies; often standard kits
+Service | Technical support and flexible orders | Emphasis on volume and lead time
+Target customers | Hospitals, clinics, industrial clients | Hospitals and distributors`
+      },
+      products: {
+        title: "Products",
+        items: [
+          {cat:"Surgical Packs", desc:"Our surgical packs are modular and customizable, meeting the diverse needs of hospitals and clinics."},
+          {cat:"Hospital Gowns", desc:"Sterile surgical gowns and hypoallergenic hospital garments."},
+          {cat:"Specialized Drapes", desc:"Drapes designed for specific surgical procedures and infection control."},
+          {cat:"Medical Garments", desc:"Disposable and reusable medical textiles with quality assurance."}
+        ]
+      },
+      services: {
+        title: "Services",
+        list: [
+          "Professional consultation for product selection",
+          "Customization of packs and garments based on client requirements",
+          "Support and training for proper product usage"
+        ]
+      },
+      news: {
+        title: "News & Articles",
+        items: [
+          {title:"Latest achievements in medical textile production", excerpt:"Updates on production capacity and certifications."},
+          {title:"Educational articles on international standards", excerpt:"Guides on EN 13795 and ISO 13485 compliance."}
+        ]
+      },
+      contact: {
+        title: "Contact Us",
+        address: "302 st, Pazhohesh Blvd, 5th Square, Industrial City, Shiraz, Iran",
+        mapLink: "https://www.google.com/maps?q=302+Pazhohesh+Blvd+Shiraz",
+        phone: ["+98 912 917 9078","+98 917 600 5690"],
+        email: "Caspian.tebs@gmail.com",
+        instagram: "@caspiantebmed",
+        telegram: "@CaspianTebpars"
+      }
+    };
+
+    function useHashRoute(){
+      const [route, setRoute] = useState(location.hash.replace('#','') || '/');
+      useEffect(()=>{
+        const onHash = ()=> setRoute(location.hash.replace('#','') || '/');
+        window.addEventListener('hashchange', onHash);
+        return ()=> window.removeEventListener('hashchange', onHash);
+      },[]);
+      return [route, (r)=> location.hash = r];
+    }
+
+    function App(){
+      const [route] = useHashRoute();
+      useEffect(()=> {
+        document.querySelectorAll('#menu a').forEach(a=>{
+          a.classList.toggle('active', a.getAttribute('href') === '#'+route);
+        });
+      },[route]);
+
+      return e('div', null,
+        route === '/' ? e(Home) :
+        route === '/about' ? e(About) :
+        route === '/products' ? e(Products) :
+        route === '/services' ? e(Services) :
+        route === '/news' ? e(News) :
+        route === '/contact' ? e(Contact) :
+        e(Home)
+      );
+    }
+
+    function Home(){
+      const slides = [
+        {title: CONTENT.home.slogan, text: CONTENT.home.intro},
+        {title: "Quality, Safety, Compliance", text: "EN 13795 & ISO 13485 aligned production and validated sterilization."},
+        {title: "Custom Surgical Packs", text: "Modular kits tailored to clinical protocols and specialty needs."}
+      ];
+      const [idx, setIdx] = useState(0);
+      useEffect(()=> {
+        const t = setInterval(()=> setIdx(i=> (i+1)%slides.length), 5000);
+        return ()=> clearInterval(t);
+      },[]);
+      return e('div', null,
+        e('section', {className:'hero'},
+          e('div', {className:'slider', role:'region', 'aria-label':'Hero slider'},
+            slides.map((s,i)=> e('div', {key:i, className:'slide', style:{display: i===idx ? 'block' : 'none'}},
+              e('h2', null, s.title),
+              e('p', null, s.text),
+              e('div', {style:{marginTop:12}},
+                e('a', {href:'catalog.pdf', className:'download-btn', download:true}, 'Download Company Catalog')
+              )
+            )),
+            e('div', {className:'slider-controls'},
+              slides.map((_,i)=> e('div', {key:i, className:'dot '+(i===idx?'active':''), onClick:()=>setIdx(i)}))
+            )
+          ),
+          e('aside', {className:'aside-card'},
+            e('h3', null, 'Request a Sample'),
+            e('p', {className:'small'}, 'Fill the short form and our team will contact you.'),
+            e(LeadForm)
+          )
+        ),
+        e('section', {style:{marginTop:20}},
+          e('h3', null, 'Services Overview'),
+          e('div', {className:'grid-3'},
+            CONTENT.services.list.map((s,i)=> e('div',{className:'card', key:i}, e('p', null, s)))
+          )
+        ),
+        e('section', {style:{marginTop:20}},
+          e('h3', null, 'Clients & Projects'),
+          e('div', {className:'gallery', style:{marginTop:12}},
+            [1,2,3,4,5,6,7,8].map(i=> e('div',{className:'card', key:i}, e('img',{src:`https://picsum.photos/seed/ct${i}/600/400`, alt:'project image'})))
+          )
+        )
+      );
+    }
+
+    function LeadForm(){
+      const [msg, setMsg] = useState('');
+      const [a, b] = [2, 5];
+      function submit(e){
+        e.preventDefault();
+        const form = e.target;
+        if(form.honeypot.value) return;
+        if(form.captcha.value != (a+b)){ setMsg('Security code incorrect'); return; }
+        setMsg('Request submitted. Thank you!');
+        form.reset();
+        setTimeout(()=> setMsg(''),3000);
+      }
+      return e('form', {onSubmit:submit},
+        e('input',{type:'text', name:'name', placeholder:'Full name', required:true}),
+        e('input',{type:'tel', name:'phone', placeholder:'Phone number', required:true}),
+        e('input',{type:'text', name:'honeypot', placeholder:'', style:{display:'none'}}),
+        e('div', {style:{display:'flex',gap:8,marginTop:8}},
+          e('input',{type:'text', name:'captcha', placeholder:`${a} + ${b} = ?`, required:true}),
+          e('button',{type:'submit'}, 'Send')
+        ),
+        msg && e('div',{style:{color:'green',marginTop:8}}, msg)
+      );
+    }
+
+    function About(){
+      return e('div', null,
+        e('h1', null, 'About Us'),
+        e('div', {className:'card', style:{marginTop:12, whiteSpace:'pre-wrap'}}, e('p', null, CONTENT.about.body)),
+        e('div', {style:{marginTop:12}}, e('a',{href:'catalog.pdf', className:'download-btn', download:true}, 'Download Company Catalog'))
+      );
+    }
+
+    function Products(){
+      return e('div', null,
+        e('h1', null, 'Products'),
+        e('div', {style:{marginTop:12}},
+          CONTENT.products.items.map((p,i)=> e('div',{className:'card', key:i, style:{marginBottom:10}}, e('h3', null, p.cat), e('p', null, p.desc)))
+        ),
+        e('div', {style:{marginTop:12}}, e('a',{href:'catalog.pdf', className:'download-btn', download:true}, 'Download Catalog'))
+      );
+    }
+
+    function Services(){
+      return e('div', null,
+        e('h1', null, 'Services'),
+        e('div', {style:{marginTop:12}},
+          CONTENT.services.list.map((s,i)=> e('div',{className:'card', key:i, style:{marginBottom:10}}, e('p', null, s)))
+        )
+      );
+    }
+
+    function News(){
+      return e('div', null,
+        e('h1', null, 'News & Articles'),
+        e('div', {style:{marginTop:12}},
+          CONTENT.news.items.map((n,i)=> e('div',{className:'card', key:i, style:{marginBottom:10}}, e('h3', null, n.title), e('p', null, n.excerpt)))
+        )
+      );
+    }
+
+    function Contact(){
+      const [ok, setOk] = useState('');
+      function submit(e){
+        e.preventDefault();
+        const f = e.target;
+        if(f.honeypot.value) return;
+        setOk('Message sent. Thank you!');
+        f.reset();
+        setTimeout(()=> setOk(''),3000);
+      }
+      return e('div', null,
+        e('h1', null, 'Contact Us'),
+        e('div', {style:{display:'grid',gridTemplateColumns:'1fr 360px',gap:12,marginTop:12}},
+          e('div', {className:'card'},
+            e('h3', null, 'Headquarters'),
+            e('p', null, CONTENT.contact.address),
+            e('p', null, 'Phone: ' + CONTENT.contact.phone.join(' , ')),
+            e('p', null, 'Email: ' + CONTENT.contact.email),
+            e('p', null, 'Instagram: ' + CONTENT.contact.instagram),
+            e('p', null, 'Telegram: ' + CONTENT.contact.telegram),
+            e('p', null, e('a',{href:CONTENT.contact.mapLink, target:'_blank', rel:'noopener'}, 'Open in Google Maps'))
+          ),
+          e('div', {className:'card'},
+            e('h3', null, 'Send a message'),
+            e('form', {onSubmit:submit},
+              e('input',{name:'name', placeholder:'Name', required:true}),
+              e('input',{name:'email', type:'email', placeholder:'Email', required:true}),
+              e('input',{name:'honeypot', style:{display:'none'}}),
+              e('textarea',{name:'message', rows:5, placeholder:'Message', required:true}),
+              e('button',{type:'submit'}, 'Send'),
+              ok && e('div',{style:{color:'green',marginTop:8}}, ok)
+            )
+          )
+        ),
+        e('div', {style:{marginTop:12}},
+          e('iframe',{src: CONTENT.contact.mapLink.replace('https://www.google.com/maps?q=','https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q='), width:'100%', height:360, style:{border:0,borderRadius:8}, loading:'lazy', referrerPolicy:'no-referrer-when-downgrade', title:'Company location'})
+        )
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('app'));
+    root.render(e(App));
+
+    // Smooth internal navigation
+    document.addEventListener('click', function(e){
+      const a = e.target.closest('a[href^="#"]');
+      if(a){ e.preventDefault(); const href = a.getAttribute('href'); location.hash = href.slice(1); }
+    });
+
+  })();
+  </script>
+</body>
+</html>
